@@ -1,7 +1,7 @@
 import requests
 
 
-class hourly():
+class Hourly():
 
     def __init__(self, startTime, endTime, symbol):
         self.startTime = startTime
