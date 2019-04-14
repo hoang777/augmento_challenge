@@ -31,10 +31,12 @@ class hourly():
     def get_data_all(self):
         data = []
         i = 0
-        while len(self.get_data(i)) != 0:
+        call = self.get_data(i)
+        while len(call) != 0:
             print('Data loading...')
-            data.extend(self.get_data(i))
+            data.extend(call)
             i += int(self.count)
+            call = self.get_data(i)
         print('Data loaded.')
 
         return data
