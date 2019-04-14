@@ -34,7 +34,7 @@ class Hourly():
         call = self.get_data(i)
         while len(call) != 0:
             print('Data loading...')
-            data.extend(call)
+            data += call
             i += int(self.count)
             call = self.get_data(i)
         print('Data loaded.')
